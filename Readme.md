@@ -6,10 +6,12 @@
 ## Other Notes
 * use `node --help` for all node runtime options
 * use `node --v8-options` for all v8 engine options
-* You can increase the threads for the I/O loop in libuv http://docs.libuv.org/en/v1.x/design.html via `SET UV_THREADPOOL_SIZE=,<threads> node <filename.` Note that libuv thread pool is not for all operations but for anything without another method (most common is file system operations)
+* You can increase the threads for the I/O loop in libuv http://docs.libuv.org/en/v1.x/design.html via `SET UV_THREADPOOL_SIZE=<threads> node <filename>` Note that libuv thread pool is not for all operations but for anything without another method (most common is file system operations)
 
 ### Futher Reading
-Event Loop in Node
-* https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c
+
+* Event Loop in node: https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c
+* Memory in V8: https://deepu.tech/memory-
+* V8 Blog: https://v8.dev/blog/tags/memory
 
 
