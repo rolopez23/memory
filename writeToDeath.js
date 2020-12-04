@@ -18,7 +18,9 @@ let text =  'Start'
 
 
 for (let i = 0; i < usage; i++) {
-  text+= writeLine();
+  fs.writeFile('memory.txt',writeLine(), 'utf-8', ()=>{
+    console.log('Will I ever print')
+  });
   if (i % 1000000 === 0) {
     checkMemoryNative();
     printHeapStats();
